@@ -2,17 +2,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-#img teste
-from streamlit_extras.image_in_tables import table_with_images
-
-def example(df: pd.DataFrame):
-    st.caption("Input dataframe (notice 'Flag' column is full of URLs)")
-    st.write(df)
-    df_html = table_with_images(df=df, url_columns=("Flag",))
-    st.caption("Ouput")
-    st.markdown(df_html, unsafe_allow_html=True)
-
-    
 st.title('Uber pickups in NYC')
 
 st.title('HELLOT WORLD ')
